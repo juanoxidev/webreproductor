@@ -106,7 +106,7 @@ cjs.on("error", (err) => {
 
 var metadata = {
   poster: "",
-  title: "",
+  title: "Avatar",
   description: "",
   subtitles: [
     {
