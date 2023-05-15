@@ -213,6 +213,9 @@ body.connected #cast {
   right: -50px;
 }
 .controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   clear: both;
 }
 .controls > .fas {
