@@ -1,5 +1,5 @@
 .reproductor {
-  margin: 0, auto;
+  text-align: center;
 }
 body {
   background-color: black;
@@ -10,8 +10,9 @@ h1 {
   text-align: center;
 }
 img {
-  width: 100px;
+  width: 20rem;
   height: auto;
+  margin-bottom: 2rem;
 }
 
 .encabezado {
