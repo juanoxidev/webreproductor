@@ -118,11 +118,15 @@ var metadata = {
 };
 
 $("#cast").on("click", () => {
-  if (cjs.available) {
+  if (cjs.available && !cjs.connected) {
+    // si esta disponible y no esta conectado que lo conecte
     cjs.cast(
       "https://dl.dropboxusercontent.com/s/e2i4gn6nujq5nlp/avatar.mp4?dl=0", // PELICULA LINK
       metadata
     );
+  } else {
+    // si aprieto el boton y no esta disponible y esta conectado que lo desconecte
+    cjs.disconnect();
   }
 });
 
@@ -156,7 +160,7 @@ $("#play").on("click", () => {
 
 $("#stop").on("click", () => {
   cjs.disconnect();
-});
+}); // desconectar chromecast
 
 $("#back").on("click", () => {
   var goback = cjs.time - 30;
