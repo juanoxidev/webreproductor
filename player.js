@@ -111,8 +111,8 @@ var metadata = {
   subtitles: [
     {
       active: true,
-      label: "Spanish",
-      src: "https://dl.dropboxusercontent.com/s/bveznyr274wlrvx/sub.vtt?dl=0", // SUBTITULOS LINK
+      label: "Español",
+      src: "https://dl.dropboxusercontent.com/s/95yie3glpty2dmr/subtitulo.vtt?dl=0", // SUBTITULOS LINK
     },
   ],
 };
@@ -121,7 +121,7 @@ $("#cast").on("click", () => {
   if (cjs.available && !cjs.connected) {
     // si esta disponible y no esta conectado que lo conecte
     cjs.cast(
-      "https://dl.dropboxusercontent.com/s/e2i4gn6nujq5nlp/avatar.mp4?dl=0", // PELICULA LINK
+      "https://dl.dropboxusercontent.com/s/ood7nf1nl9r8zce/peli.mp4?dl=0", // PELICULA LINK
       metadata
     );
   } else {
