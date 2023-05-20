@@ -118,15 +118,12 @@ var metadata = {
 };
 
 $("#cast").on("click", () => {
-  if (cjs.available && !cjs.connected) {
+  if (cjs.available) {
     // si esta disponible y no esta conectado que lo conecte
     cjs.cast(
       "https://dl.dropboxusercontent.com/s/ood7nf1nl9r8zce/peli.mp4?dl=0", // PELICULA LINK
       metadata
     );
-  } else {
-    // si aprieto el boton y no esta disponible y esta conectado que lo desconecte
-    cjs.disconnect();
   }
 });
 
